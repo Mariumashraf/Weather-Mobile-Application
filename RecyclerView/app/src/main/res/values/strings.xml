@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Final Project</string>
+    <string-array name="Cities">
+        <item>Alexandria</item>
+        <item>Cairo</item>
+        <item>Luxor</item>
+        <item>Giza</item>
+
+        <item>Aswan</item>
+        <item>Asyut</item>
+        <item>Beheira</item>
+        <item>Beni Suef</item>
+
+        <item>Dakahlia</item>
+        <item>Dymietta</item>
+        <item>Faiyum</item>
+        <item>Gharbia</item>
+    </string-array>
+</resources>
