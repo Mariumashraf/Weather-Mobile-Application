@@ -117,10 +117,12 @@ public class MainActivity2 extends AppCompatActivity implements LocationListener
         }
         Location location = locationManager.getLastKnownLocation(locationManager.NETWORK_PROVIDER);
         onLocationChanged(location);
+
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
+
         Weatherapi weatherapi = retrofit.create(Weatherapi.class);
         Call<InitializtionMain> initializtionCall = weatherapi.getWeather(location.getLongitude(),location.getLatitude(), apikey);
         initializtionCall.enqueue(new Callback<InitializtionMain>() {
